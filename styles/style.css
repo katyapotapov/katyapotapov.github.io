@@ -11,7 +11,7 @@ body {
 
 #main-block {
   background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 10%;
+  border-radius: 6%;
   color: black;
   width: 70%;
   position: absolute;
@@ -21,9 +21,8 @@ body {
   transform: translate(-50%, 10%);
 }
 
-header {
-  font-family: 'Baloo Bhaina', cursive;
-  font-size: 1.6em;
+
+header.global {
   margin-top: 1em;
   text-align: center;
   position: relative;
@@ -33,8 +32,23 @@ header {
   width: 80%;
 }
 
+header.subpage {
+  font-size: 1em;
+  margin-top: 1em;
+  position: relative;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+  width: 80%;
+}
+
+header.subpage a:hover {
+  background-color: transparent;
+}
+
 .name {
-  font-size: 2.5em;
+  font-family: 'Baloo Bhaina', sans-serif;;
+    font-size: 3em;
 }
 
 #description {
@@ -108,4 +122,62 @@ ul li a {
 #front-nav ul li a {
   padding-left: 0.2em;
   padding-right: 0.2em;
+}
+
+nav {
+    border-left: none;
+    border-right: none;
+    margin-bottom: 1em;
+    padding: 0.1em 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 100);
+    font-size: 1em;
+    display: table;
+}
+
+nav ul {
+    display: table-row;
+}
+
+nav ul li {
+  display: table-cell;
+  text-align: center;
+  width: 25%;
+}
+
+a.selected {
+  background-color: black;
+  color: white;
+}
+
+a.selected:hover {
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  font-family: 'Baloo Bhaina', sans-serif;;
+  font-size: 2rem;
+  position: relative;
+  width: auto;
+  left: 50%;
+  transform: translate(-40%, 0);
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+section {
+  width: 80%;
+  position: relative;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  background-color: white;
+  padding: 1em;
+  border-radius: 5%;
 }
