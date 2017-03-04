@@ -30,6 +30,7 @@ header.global {
   margin-right: -50%;
   transform: translate(-50%, 0);
   width: 80%;
+  padding-bottom: 1em;
 }
 
 header.subpage {
@@ -48,7 +49,8 @@ header.subpage a:hover {
 
 .name {
   font-family: 'Baloo Bhaina', sans-serif;;
-    font-size: 3em;
+  font-size: 3em;
+  line-height: 90%;
 }
 
 #description {
