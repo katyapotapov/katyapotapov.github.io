@@ -100,6 +100,7 @@ a:hover {
   text-align: center;
   width: 33.33%;
   width: calc(100% / 3);
+  position: relative;
 }
 
 
@@ -182,4 +183,10 @@ section {
   background-color: white;
   padding: 1em;
   border-radius: 5%;
+}
+
+.fade-in {
+  position: absolute;
+  left: 0;
+  display: none;
 }
