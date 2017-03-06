@@ -5,37 +5,45 @@ body {
 }
 
 #wrapper {
-    font-family: 'Oxygen Mono', monospace;
-    position: relative;
+  position: relative;
+  text-align: center;
 }
 
-#main-block {
+#wrapper::before {
+  content: '';
+  display: inline-block;
+  height: 100vh;
+  vertical-align: middle;
+
+}
+
+#translucent-bg {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   color: black;
   width: 70%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, 10%);
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
 }
 
+#main-block {
+  width: 80%;
+  display: inline-block;
+  text-align: center;
+}
 
 header.global {
-  margin-top: 1em;
+  margin: 1em 0;
   text-align: center;
-  position: relative;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, 0);
   width: 80%;
-  padding-bottom: 1em;
+  display: inline-block;
 }
 
 header.subpage {
   font-size: 1em;
-  margin-top: 1em;
+  margin: 1em;
   position: relative;
   left: 50%;
   margin-right: -50%;
@@ -48,9 +56,7 @@ header.subpage a:hover {
 }
 
 .name {
-  font-family: 'Baloo Bhaina', sans-serif;;
   font-size: 3em;
-  line-height: 90%;
 }
 
 #description {
@@ -65,13 +71,7 @@ header.subpage a:hover {
   border-left: none;
   border-right: none;
   margin-bottom: 1em;
-  padding: 0.1em 0;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgba(255, 255, 255, 100);
   font-size: 1em;
-  display: table;
 }
 
 ul {
@@ -101,6 +101,16 @@ a {
   position: relative;
 }
 
+#link-bar ul li:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#link-bar ul li:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 
 ul li a {
   display: block;
@@ -109,8 +119,6 @@ ul li a {
 #front-nav {
   display: table;
   font-size: 1.5em;
-  margin: 0 1.5em;
-  position: relative;
 }
 
 
@@ -118,6 +126,7 @@ ul li a {
   margin-bottom: 1em;
   border-radius: 10px;
   padding: 0.15em 0.3em;
+  text-align: left;
 }
 
 
@@ -127,12 +136,10 @@ nav {
     border-left: none;
     border-right: none;
     margin-bottom: 1em;
-    padding: 0.1em 0;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-    background-color: rgba(255, 255, 255, 100);
     font-size: 1em;
     display: table;
 }
@@ -168,7 +175,7 @@ h1 {
   margin-bottom: 0;
 }
 
-section {
+.paragraph {
   width: 80%;
   position: relative;
   left: 50%;
@@ -178,7 +185,7 @@ section {
   margin-bottom: 1em;
   background-color: white;
   padding: 1em;
-  border-radius: 5%;
+  border-radius: 20px;
 }
 
 .fade-in {
