@@ -4,12 +4,12 @@ body {
   background-size: 30%;
 }
 
-#wrapper {
+.wrapper {
   position: relative;
   text-align: center;
 }
 
-#wrapper::before {
+.wrapper::before {
   content: '';
   display: inline-block;
   height: 100vh;
@@ -17,25 +17,26 @@ body {
 
 }
 
-#translucent-bg {
+.main {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   color: black;
-  width: 70%;
+  width: 60%;
   display: inline-block;
   vertical-align: middle;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   text-align: center;
 }
 
-#main-block {
+.main--content {
   width: 80%;
   display: inline-block;
   text-align: center;
+  padding: 1em;
 }
 
 header.global {
-  margin: 1em 0;
+  margin-bottom: 1em;
   text-align: center;
   width: 80%;
   display: inline-block;
@@ -59,18 +60,9 @@ header.subpage a:hover {
   font-size: 3em;
 }
 
-#description {
-  padding-top: 5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-bottom: 2em;
-  text-align: center;
-}
-
-#link-bar {
+.link-bar {
   border-left: none;
   border-right: none;
-  margin-bottom: 1em;
   font-size: 1em;
 }
 
@@ -84,6 +76,10 @@ li {
   background-color: white;
 }
 
+ul li a {
+  display: block;
+}
+
 li:hover {
     background-color: black;
     color: white;
@@ -94,42 +90,55 @@ a {
   color: inherit;
 }
 
-#link-bar ul li {
+a.selected {
+  background-color: black;
+  color: white;
+}
+
+a.selected:hover {
+  background-color: white;
+  color: black;
+}
+
+.link-bar ul li {
   display: inline-block;
   text-align: center;
   width: 25%;
   position: relative;
 }
 
-#link-bar ul li:first-child {
+.link-bar ul li:first-child {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
-#link-bar ul li:last-child {
+.link-bar ul li:last-child {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-
-ul li a {
-  display: block;
+.link-bar--text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  visibility: hidden;
 }
 
-#front-nav {
+ul li a:hover .link-bar--text {
+  visibility: visible;
+}
+
+.front-nav {
   display: table;
   font-size: 1.5em;
 }
 
-
-#front-nav ul li {
+.front-nav ul li {
   margin-bottom: 1em;
   border-radius: 10px;
   padding: 0.15em 0.3em;
   text-align: left;
 }
-
-
 
 
 nav {
@@ -154,18 +163,9 @@ nav ul li {
   width: 25%;
 }
 
-a.selected {
-  background-color: black;
-  color: white;
-}
-
-a.selected:hover {
-  background-color: white;
-  color: black;
-}
 
 h1 {
-  font-family: 'Baloo Bhaina', sans-serif;;
+  font-family: 'Baloo Bhaina', sans-serif;
   font-size: 2rem;
   position: relative;
   width: auto;
@@ -188,7 +188,10 @@ h1 {
   border-radius: 20px;
 }
 
-.fade-in {
-  position: absolute;
-  left: 0;
+#description {
+  padding-top: 5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+  text-align: center;
 }
