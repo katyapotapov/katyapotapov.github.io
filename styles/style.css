@@ -44,12 +44,8 @@ header.global {
 
 header.subpage {
   font-size: 1em;
-  margin: 1em;
-  position: relative;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, 0);
-  width: 80%;
+  margin-bottom: 1em;
+  display: inline-block;
 }
 
 header.subpage a:hover {
@@ -58,6 +54,7 @@ header.subpage a:hover {
 
 .name {
   font-size: 3em;
+  font-size: 5vw;
 }
 
 .link-bar {
@@ -142,50 +139,28 @@ ul li a:hover .link-bar--text {
 
 
 nav {
-    border-left: none;
-    border-right: none;
-    margin-bottom: 1em;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     background-color: white;
-    font-size: 1em;
-    display: table;
 }
 
-nav ul {
-    display: table-row;
-}
 
 nav ul li {
-  display: table-cell;
+  display: inline-block;
   text-align: center;
   width: 25%;
+  position: relative;
 }
 
 
 h1 {
-  font-family: 'Baloo Bhaina', sans-serif;
-  font-size: 2rem;
-  position: relative;
-  width: auto;
-  left: 50%;
-  transform: translate(-40%, 0);
-  margin-top: 1em;
-  margin-bottom: 0;
+  font-size: 2em;
 }
 
 .paragraph {
-  width: 80%;
-  position: relative;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, 0);
-  margin-top: 0.5em;
-  margin-bottom: 1em;
+  margin: 1em 0;
   background-color: white;
-  padding: 1em;
   border-radius: 20px;
+  padding: 1em;
 }
 
 #description {
