@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  background-image: url("../data/mountains.gif");
-  background-size: 30%;
+  background-image: url("../data/mountain-sky.JPG");
+  background-size: 100%;
 }
 
 .wrapper {
@@ -14,13 +14,12 @@ body {
   display: inline-block;
   height: 100vh;
   vertical-align: middle;
-
 }
 
 .main {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
-  color: black;
+  color: #444444;
   width: 60%;
   display: inline-block;
   vertical-align: middle;
@@ -87,6 +86,7 @@ a {
 a.selected {
   background-color: black;
   color: white;
+  border-radius: inherit;
 }
 
 a.selected:hover {
@@ -129,7 +129,6 @@ li a:hover .link-bar--text {
 
 nav {
     width: 100%;
-    background-color: white;
 }
 
 
