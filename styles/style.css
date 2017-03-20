@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  background-image: url("../data/mountain-sky.JPG");
-  background-size: 100%;
+  background-image: url("../data/tompkinsface.JPG");
+  background-size: cover;
 }
 
 .wrapper {
