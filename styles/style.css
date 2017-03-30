@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  background-image: url("../data/mountain-sky.JPG");
+  background-color: grey;
+  /*background-image: url("../data/mountain-sky.JPG");*/
   background-size: cover;
 }
 
@@ -20,10 +21,20 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   color: #444444;
-  width: 60%;
+  width: 90%;
   display: inline-block;
   vertical-align: middle;
   font-family: 'Josefin Sans', sans-serif;
+}
+
+@media screen and (min-width: 700px) {
+  body .main {
+    width: 630px;
+  }
+
+  body .name {
+    font-size: 50px;
+  }
 }
 
 .main--content {
@@ -49,8 +60,7 @@ header.subpage a:hover {
 }
 
 .name {
-  font-size: 3em;
-  font-size: 5vw;
+  font-size: 7vw;
 }
 
 .link-bar {
@@ -73,9 +83,22 @@ li a {
   display: block;
 }
 
-li:hover {
-    background-color: black;
+@keyframes fade-in {
+  from {
+    background-color: white;
+    color: #000;
+    color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: #444444;
     color: white;
+  }
+}
+
+li:hover {
+    background-color: #444444;
+    color: white;
+    animation: fade-in 0.15s 1;
 }
 
 a {
@@ -84,14 +107,15 @@ a {
 }
 
 a.selected {
-  background-color: black;
+  background-color: #444444;
   color: white;
   border-radius: inherit;
 }
 
 a.selected:hover {
   background-color: white;
-  color: black;
+  color: #444444;
+  animation: fade-in 0.1s 1 reverse;
 }
 
 .link-bar li {
@@ -153,7 +177,7 @@ h1 {
   margin: 1em 0;
 }
 
-.paragraph {
+.content {
   margin: 1em 0;
   background-color: white;
   border-radius: 20px;
@@ -170,5 +194,10 @@ h1 {
 
 img {
   display: block;
-  margin: 0 auto;
+  margin: 0.25em auto;
+}
+
+.bottom-button {
+  margin-top: 2em;
+  width: 100%;
 }
