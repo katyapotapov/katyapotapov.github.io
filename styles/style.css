@@ -3,6 +3,7 @@ body {
   background-color: grey;
   background-image: url("../data/mountain-sky.JPG");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .wrapper {
