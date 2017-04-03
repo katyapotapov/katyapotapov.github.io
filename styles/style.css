@@ -140,7 +140,7 @@ li a:hover .link-bar--text {
 }
 
 .front-nav {
-  display: table;
+  display: flex;
   font-size: 1.5em;
 }
 
@@ -149,6 +149,10 @@ li a:hover .link-bar--text {
   border-radius: 10px;
   padding: 0.15em 0.3em;
   text-align: left;
+}
+
+img.front-nav {
+  height: 40px;
 }
 
 
@@ -201,4 +205,29 @@ img {
 .bottom-button {
   margin-top: 2em;
   width: 100%;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.grid-item {
+  display: flex;
+  margin: auto;
+  padding: 2.5%;
+  width: 100%;
+}
+
+.grid-content {
+  margin: auto;
+}
+
+@media all and (min-width: 400px) {
+  .grid-item {
+    padding: 40px;
+    width: 40%;
+  }
 }
