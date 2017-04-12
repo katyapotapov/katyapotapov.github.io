@@ -85,10 +85,6 @@ li a {
   display: block;
 }
 
-div a {
-  display: block;
-}
-
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -150,7 +146,7 @@ li a:hover .link-bar--text {
   font-size: 1.5em;
 }
 
-.front-nav div {
+.front-nav li {
   margin-bottom: 1em;
   border-radius: 10px;
   padding: 0.15em 0.3em;
@@ -222,8 +218,6 @@ img.front-nav {
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .grid-item {
@@ -231,7 +225,10 @@ img.front-nav {
   margin: auto;
   padding: 2.5%;
   width: 100%;
-  background-color: white;
+}
+
+.grid-content {
+  margin: auto;
 }
 
 @media all and (min-width: 400px) {
@@ -240,6 +237,9 @@ img.front-nav {
     width: 40%;
   }
 }
+<<<<<<< HEAD
 
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.1); }
+=======
+>>>>>>> 59dbaab7e9b66bfe618d2d223b72567a00e34089
