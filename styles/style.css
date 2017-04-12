@@ -76,9 +76,10 @@ ul {
   list-style: none;
 }
 
-li {
+/*li {
   background-color: white;
-}
+  background-color: rgba(255, 255, 255, 50);
+}*/
 
 li a {
   display: block;
@@ -86,9 +87,10 @@ li a {
 
 @keyframes fade-in {
   from {
-    background-color: white;
+    opacity: 0;
+    /*background-color: white;
     color: #000;
-    color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);*/
   }
   to {
     background-color: #444444;
@@ -140,7 +142,7 @@ li a:hover .link-bar--text {
 }
 
 .front-nav {
-  display: table;
+  display: flex;
   font-size: 1.5em;
 }
 
@@ -198,7 +200,39 @@ img {
   margin: 0.25em auto;
 }
 
+img.front-nav {
+  height: 40px;
+}
+
 .bottom-button {
   margin-top: 2em;
   width: 100%;
 }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.grid-item {
+  display: flex;
+  margin: auto;
+  padding: 2.5%;
+  width: 100%;
+}
+
+.grid-content {
+  margin: auto;
+}
+
+@media all and (min-width: 400px) {
+  .grid-item {
+    padding: 40px;
+    width: 40%;
+  }
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
