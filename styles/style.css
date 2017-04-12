@@ -117,12 +117,6 @@ a.selected {
   border-radius: inherit;
 }
 
-a.selected:hover {
-  background-color: white;
-  color: #444444;
-  animation: fade-in 0.1s 1 reverse;
-}
-
 .link-bar li {
   display: inline-block;
   width: 25%;
@@ -149,8 +143,7 @@ li a:hover .link-bar--text {
 .front-nav li {
   margin-bottom: 1em;
   border-radius: 10px;
-  padding: 0.15em 0.3em;
-  text-align: left;
+  padding: 0;
 }
 
 img.front-nav {
@@ -247,3 +240,12 @@ img.front-nav {
 
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.1); }
+
+
+/*.grow-big {
+  transition: all .8s ease-in-out;
+ }
+
+ .grow-big:hover {
+   transform: scale(1.5);
+ }*/
