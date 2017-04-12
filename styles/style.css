@@ -153,6 +153,10 @@ li a:hover .link-bar--text {
   text-align: left;
 }
 
+img.front-nav {
+  height: 40px;
+}
+
 
 nav {
     width: 100%;
