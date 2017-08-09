@@ -7,7 +7,7 @@ html {
 body {
     margin: 0;
     background-color: grey;
-    background: url("../data/foggy-torngats-crop-sm.JPG") no-repeat center center fixed;
+    background: url("../data/foggy-torngats-crop-sm.jpg") no-repeat center center fixed;
     /*background-size: cover;
   background-attachment: fixed;*/
     -webkit-background-size: cover;
