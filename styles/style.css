@@ -3,6 +3,7 @@ html {
     box-sizing: border-box;
     /*TODO find out what this does*/
     font: 2.5rem/3.5rem 'Raleway', arial, sans-serif;
+    font: 3vw/3.1vw 'Raleway', arial, sans-serif;
 }
 
 body {
@@ -21,8 +22,11 @@ body {
 .wrapper {
     position: absolute;
     left: 1em;
-    right: 1em;
+    left: 5vw;
+    right: 5em;
+    right: 30vw;
     top: 0.6em;
+    top: 5vh;
     -webkit-animation: fadein 2s;
     /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s;
@@ -44,6 +48,7 @@ body {
     /*top: 84px;*/
     color: #4f4f4f;
     margin-bottom: 3em;
+    margin-bottom: 15vh;
 }
 
 nav {
@@ -69,6 +74,7 @@ footer {
     bottom: 0;
     left: 0;
     padding: 1em;
+    padding: 5vw;
     font-style: italic;
     text-align: left;
     color: rgba(197, 208, 226, 0.5);
