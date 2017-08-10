@@ -2,6 +2,7 @@ html {
     height: 100%;
     box-sizing: border-box;
     /*TODO find out what this does*/
+    font: 2.5rem/3.5rem 'Raleway', arial, sans-serif;
 }
 
 body {
@@ -14,7 +15,6 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font: 4rem/5.2rem 'Raleway', arial, sans-serif;
     /*font: 72px/85px 'Raleway', arial, sans-serif;*/
 }
 
