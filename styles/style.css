@@ -6,6 +6,29 @@ html {
     font: 3vw/3.1vw 'Raleway', arial, sans-serif;
 }
 
+@media screen and (max-width: 1400px) {
+  html {
+    font: 3.5rem/3.62rem 'Raleway', arial, sans-serif;
+  }
+  .wrapper {
+      position: absolute;
+      left: 6em;
+      right: 35em;
+      top: 6em;
+      -webkit-animation: fadein 2s;
+      /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s;
+      /* Firefox < 16 */
+      -ms-animation: fadein 2s;
+      /* Internet Explorer */
+      -o-animation: fadein 2s;
+      /* Opera < 12.1 */
+      animation: fadein 2s;
+      text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+
+}
+
 body {
     margin: 0;
     background-color: grey;
