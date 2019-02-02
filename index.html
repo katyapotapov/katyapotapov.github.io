@@ -1,33 +1,108 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <link type="text/css" rel="stylesheet" href="styles/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="shortcut icon" href="data/sun-icon.png"/>
-    <title>Katya Potapov</title>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Katya Potapov</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/skeleton.css">
+  <link rel="stylesheet" href="styles/custom.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="data/rabbit.png">
+
 </head>
+<body class="code-snippets-visible">
 
-<body>
-    <div class="wrapper">
-        <p class="description">
-            Hey, I’m Katya!<br /><br /> I’m currently a computer science student at the University of Waterloo. I do design too. Check out some of my projects <a href="https://prezi.com/nx49f8klcyvq/updated-circular-economy-forestry/" target="_blank"><em>here</em></a>,
-            <a href="https://vimeo.com/215961512" target="_blank"><em>here</em></a> and
-            <a href="https://devpost.com/software/goodvibesonly-hmif63" target="_blank"><em>here</em></a>.
-        </p>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <section class="header">
+      <div class="value-props row">
+        <div class="four columns u-max-full-width value-img"><img src="data/IMG_0673_small.jpg" /></div>
+        <div class="eight columns">
+          <div class="title">
+            <h2>Katya Potapov&nbsp;&nbsp;
+              <a href="mailto:kpotapov@uwaterloo.ca" class="email" target="_blank"><i class="far fa-envelope fa-sm"></i></a>
+              <a href="https://github.com/katyapotapov/" class="github" target="_blank"><i class="fab fa-github fa-sm"></i></a>
+              <a href="https://www.linkedin.com/in/katyapotapov/" class="linkedin" target="_blank"><i class="fab fa-linkedin-in fa-sm"></i></a>
+              <a href="https://500px.com/katyush" class="500px" target="_blank"><i class="fab fa-500px fa-sm"></i></a>
+            </h2>
+          </div>
+        <h5 class="row">Software developer, computer science student</h5>
+        <h6 class="row">I'm experienced in web, front end, and back end development, as well as UX and graphic design.
+          <br /><br />
+          ⚠️ Website under construction, beware of floating divs ⚠️</h6>
+        <h5 class="row">
+        </h5></div>
+      </div>
+    </section>
 
-        <nav>
-            <a href="https://github.com/katyapotapov" target="_blank"><em>Github</em></a> -
-            <a href="https://www.linkedin.com/in/katyapotapov/" target="_blank"><em>Linkedin</em></a> -
-            <a href="https://500px.com/katyush" target="_blank"><em>500px</em></a>
-        </nav>
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link glitch" href="#software">Software</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link glitch" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-
+    <!-- Software  -->
+    <div class="docs-section software" id="software">
+      <h6 class="docs-header">Software</h6>
+      <div class="row example">
+        <div class="four columns example-screenshot-wrapper">
+          <img class="u-max-full-width" src="data/ggj_screenshot.png" /></div>
+        <div class="eight columns offset-by-four column">
+          <h6 class="example-header">Global Game Jam 2019</h6>
+          <p class="example-description">A multiplayer deception game set in the medieval times. Each new player is assigned a role - homewrecker or protector. The protectors must guard the hearth of their house from destruction by the homewreckers. The only catch is that the protectors don't know who the homewreckers are.</p>
+          <a class="button" href="http://katyapotapov.com/GGJ2019" target="_blank">Demo</a>
+          <a class="button" href="https://globalgamejam.org/2019/games/homewrecker-3" target="_blank">Info</a>
+          <a class="button" href="https://github.com/katyapotapov/GGJ2019" target="_blank">Source</a>
+        </div>
+      </div>
+      <div class="row example">
+        <div class="four columns example-screenshot-wrapper">
+          <img class="u-max-full-width" src="data/epicentre_screenshot.png" /></div>
+        <div class="eight columns offset-by-four column">
+          <h6 class="example-header">Epicentre</h6>
+          <p class="example-description">A web app that helps friends find a location to hang out. Users can create groups, share their location, choose a hangout spot, and schedule events. (in progress)</p>
+        </div>
+      </div>
     </div>
+    <!-- Contact -->
+    <div class="docs-section" id="contact">
+      <h6 class="docs-header">Contact</h6>
+      <p>Shoot me an email: <a href="mailto:kpotapov@uwaterloo.ca">kpotapov@uwaterloo.ca</a> </p>
+    </div>
+  </div>
 
-    <footer>
-        full website coming soon
-    </footer>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
-
 </html>
