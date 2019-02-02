@@ -223,4 +223,15 @@
     border-bottom-color: #33C3F0; }
 }
 .glitch {
-  animation: .8s shake infinite alternate; }
+  display: inline; }
+.glitch:hover {
+  animation: .8s shake alternate; }
+@keyframes shake {
+  0% { transform: skewX(-30deg); }
+  5% { transform: skewX(30deg); }
+  10% { transform: skewX(-30deg); }
+  15% { transform: skewX(30deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); } }
+
+
