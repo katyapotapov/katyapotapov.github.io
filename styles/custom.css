@@ -18,7 +18,6 @@
   margin-bottom: 0;}
 .value-img {
   display: block;
-  text-align: center;
   margin: 2.5rem auto 0; }
 .example-grid .column,
 .example-grid .columns {
@@ -222,5 +221,37 @@
   .popover-item:first-child .popover-link:hover:after {
     border-bottom-color: #33C3F0; }
 }
-.glitch {
-  animation: .8s shake infinite alternate; }
+
+.icon {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.github {
+    color: #333;
+}
+
+.linkedin {
+  color: #0077b5;
+}
+
+.fivehundredpx {
+  color: #ff4c4c;
+}
+
+footer {
+    position:absolute;
+    bottom: 0;
+    display: table;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee; 
+    width: 100%;
+    height: 6.5rem;
+    margin-top: 12rem;
+}
+
+.footer-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
